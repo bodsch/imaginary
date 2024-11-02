@@ -5,10 +5,10 @@ name: CI
 on:
   push:
     branches:
-    #branches-ignore:
-    #  - '**'
-    #tags:
-    #  - '*.*.*'
+      - 'main'
+      - 'master'
+      - 'feature/**'
+
   schedule:
     - cron: "0 20 * * 0"
 
